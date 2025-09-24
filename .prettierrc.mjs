@@ -1,5 +1,5 @@
 /** @type {import('prettier').Config} */
-module.exports = {
+export default {
   endOfLine: "lf",
   semi: true,
   singleQuote: false,
@@ -21,22 +21,22 @@ module.exports = {
     "^[./]",
   ],
   plugins: [
-    require.resolve("@ianvs/prettier-plugin-sort-imports"),
-    require.resolve("prettier-plugin-tailwindcss"),
-    require.resolve("prettier-plugin-astro"),
-    require.resolve("prettier-plugin-svelte"),
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-astro",
+    "prettier-plugin-svelte",
   ],
   overrides: [
     {
-      files: "*.astro",
+      files: '*.astro',
       options: {
-        parser: "astro",
+        parser: 'astro',
       },
     },
     {
-      files: "*.svelte",
+      files: '*.svelte',
       options: {
-        parser: "svelte",
+        parser: 'svelte',
       },
     },
   ],
