@@ -28,6 +28,12 @@ export default {
   ],
   overrides: [
     {
+      files: ['*.md', '*.mdx'],
+      options: {
+        printWidth: 80,
+      },
+    },
+    {
       files: '*.astro',
       options: {
         parser: 'astro',
